@@ -8,3 +8,15 @@ mongoexport --db test --collection citId --type=json --fields _id,name,country -
 
 mongoimport --db local --collection citId --file citId.json
 
+
+/// mongodump -o path to dump
+
+mongodump -o pathtodump --db dbname
+
+mongodump -o pathtodump --db dbname --c colletionname
+
+mongodump -o C:\Program Files\MongoDB\Server\4.4\bin --db testdb
+
+mongorestore -o C:\Program Files\MongoDB\Server\4.4\bin
+
+mongorestore pathofdump
